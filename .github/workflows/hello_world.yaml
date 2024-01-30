@@ -1,4 +1,5 @@
 name: Hello World Workflow
+
 on:
   push:
     branches:
@@ -18,7 +19,6 @@ jobs:
   goodbye:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout
       - name: good bye
         run: echo "Good bye"
         shell: bash
